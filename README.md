@@ -23,4 +23,4 @@ To install Node.js, first run: `npm install`.
 Then, to test the website, run: `npm run dev` to run it locally on your browser.
 
 # Copyright
-Copyright (c) 2026 Snowman64, under the [MIT License](https://www.gnu.org/licenses/gpl-3.0.en.html).
+Copyright (c) 2026 Snowman64, under the [MIT License](https://opensource.org/license/mit).
