@@ -5,6 +5,7 @@ function Discord() {
     
   return (
     <div>
+      <p>Loading Discord...</p>
     </div>
   )
 }
