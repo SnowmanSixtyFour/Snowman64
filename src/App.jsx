@@ -1,30 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate, useNavigate } from "react-router-dom";
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import NavBar from "./components/NavBar";
 
 // Pages
-import home from './pages/home';
+import Home from "./components/Pages/home";
 
-function App() {
-  const [count, setCount] = useState(0)
+function AppContent() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      // put key presses here later
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [navigate]);
 
   return (
-    <Router>
-      <div>
-        <NavBar/>
-        <p className="separator"/>
-        <Routes>
-          <Route path="/" element={<home />} />
-        </Routes>
-        <br/>
-        <p>&copy; 2026 Snowman64</p>
-      </div>
-    </Router>
-  )
+    <div>
+      <NavBar />
+      <br/>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+
+      <br/>
+      <p>&copy; 2026 Chris Ryczke</p>
+    </div>
+  );
 }
 
-export default App
+function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
+  );
+}
+
+export default App;
