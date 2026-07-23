@@ -26,7 +26,7 @@ function AppContent() {
       </Routes>
 
       <br/>
-      <p>&copy; 2026 Snowman64</p>
+      <p>&copy; Snowman64 2024-2026</p>
     </div>
   );
 }
