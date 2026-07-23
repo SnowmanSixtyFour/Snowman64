@@ -11,15 +11,6 @@ import Discord from "./components/Pages/Discord";
 function AppContent() {
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const handleKeyDown = (event) => {
-      // put key presses here later
-    };
-
-    document.addEventListener("keydown", handleKeyDown);
-    return () => document.removeEventListener("keydown", handleKeyDown);
-  }, [navigate]);
-
   return (
     <div>
       {/*
