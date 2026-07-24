@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 function Socials() {
   return (
     <div>
-      <p><b>Here are each of my accounts on different social media platforms.</b></p>
+      <h2>Socials</h2>
+      <br/>
+      <p>Here are each of my accounts on different social media platforms.</p>
       <br/>
       <ul>
         <li><a href="https://bit.ly/snowman64" target="_blank" rel="noopener noreferrer">YouTube</a></li>
