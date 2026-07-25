@@ -14,7 +14,6 @@ function AppContent() {
   return (
     <div>
       <NavBar />
-      <br/>
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -23,7 +22,6 @@ function AppContent() {
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
 
-      <br/>
       <p className="separator"/>
       <p>&copy; Snowman64 2024-2026</p>
     </div>
