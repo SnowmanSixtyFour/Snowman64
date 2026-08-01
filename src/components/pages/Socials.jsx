@@ -1,10 +1,15 @@
 import { useState } from 'react'
 import { Link } from "react-router-dom";
 
+// Components
+import Back from "../Back.jsx";
+
 function Socials() {
   return (
     <div>
-      <p><b>Here are each of my accounts on different social media platforms.</b></p>
+      <h2>Social Media Accounts</h2>
+      <br/>
+      <p>Here are each of my accounts on different social media platforms.</p>
       <br/>
       <ul>
         <li><a href="https://bit.ly/snowman64" target="_blank" rel="noopener noreferrer">YouTube</a></li>
@@ -15,7 +20,12 @@ function Socials() {
         <li><a href="https://www.reddit.com/user/_snowman64_/" target="_blank" rel="noopener noreferrer">Reddit</a></li>
       </ul>
       <br/>
-      <Link className="navButton" to="/">Go Back</Link>
+      <h2>Social Platforms</h2>
+      <br/>
+      <p><a href="/discord">Discord Server</a></p>
+      <br/>
+      <br/>
+      <Back/>
     </div>
   )
 }

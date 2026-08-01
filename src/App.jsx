@@ -6,17 +6,14 @@ import NavBar from "./components/NavBar";
 // Pages
 import Home from "./components/Pages/home";
 import Socials from "./components/Pages/Socials";
-import Discord from "./components/Pages/Discord";
+import Discord from "./components/pages/Discord";
 
 function AppContent() {
   const navigate = useNavigate();
 
   return (
     <div>
-      {/*
       <NavBar />
-      */}
-      <br/>
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -25,7 +22,7 @@ function AppContent() {
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
 
-      <br/>
+      <p className="separator"/>
       <p>&copy; Snowman64 2024-2026</p>
     </div>
   );
