@@ -21,7 +21,7 @@ function Home() {
       <p>But I also occasionally do other things!</p>
       <a className="iconLink" href="https://bit.ly/snowman64" target="_blank" rel="noopener noreferrer"><img src={YouTube} alt="YouTube" /></a>
       <a className="iconLink" href="https://bsky.app/profile/snowman64.com" target="_blank" rel="noopener noreferrer"><img src={Bluesky} alt="Bluesky" /></a>
-      <a className="iconLink" href="/discord" target="_blank" rel="noopener noreferrer"><img src={Discord} alt="Discord" /></a>
+      <a className="iconLink" href="/discord" rel="noopener noreferrer"><img src={Discord} alt="Discord" /></a>
       <br/>
       <p className="faded">You can find me on other social media platforms, too!</p>
       <br/>
